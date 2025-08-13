@@ -7,11 +7,11 @@ function generatePassword(length = 8) {
     }
     return password;
 }
-
+// get random verify Token
 function generateVerifyToken(){
-    const verifyToken = "";
+    var verifyToken = "";
     const numbers = "0123456789";
-     for (let i = 0; i < length; i++) {
+     for (let i = 0; i < 6; i++) {
         verifyToken += numbers.charAt(Math.floor(Math.random() * numbers.length));
     }
     return verifyToken;
